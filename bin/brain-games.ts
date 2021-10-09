@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import userWelcome from "../src/cli";
 import brainEven from "../games/brain-even";
 import brainCalc from "../games/brain-calc";
