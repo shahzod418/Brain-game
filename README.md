@@ -1,6 +1,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/926581b874efd0a1e4ef/maintainability)](https://codeclimate.com/github/shahzod418/project--brain-game-typescript/maintainability)
 
-[![Actions Status](https://github.com/shahzod418/project--brain-game-typescript/workflows/eslint-test/badge.svg)](https://github.com/shahzod418/project--brain-game/actions)
+[![Actions Status](https://github.com/shahzod418/project--brain-game-typescript/workflows/eslint-test/badge.svg)](https://github.com/shahzod418/project--brain-game-typescript/actions)
 
 # О Проекте
 
