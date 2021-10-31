@@ -7,19 +7,11 @@ var brain_calc_1 = require("../games/brain-calc");
 var brain_gcd_1 = require("../games/brain-gcd");
 var brain_progression_1 = require("../games/brain-progression");
 var brain_prime_1 = require("../games/brain-prime");
-var gameList = ["even", "calc", "gcd", "progression", "prime"];
-//
-// const gameDescription = {
-//   even: 'Determining an even number',
-//   calc: 'Arithmetic expressions that need to be calculated',
-//   gcd: 'Determining the greatest common divisor',
-//   progression: 'Finding missing numbers in a sequence of numbers',
-//   prime: 'Definition of a prime number',
-// };
+var game_list_1 = require("./game-list");
 var userName = "";
 var userWelcome = function (gamename) {
-    if (!gameList.includes(gamename)) {
-        return console.log("Не выбрана игра из списка.\nВоспользуйтесь опцией --list для просмотра списка игр");
+    if (!(0, game_list_1.gameList)().includes(gamename)) {
+        return console.log("Не выбрана игра из списка.\nВоспользуйтесь командой list для просмотра списка игр");
     }
     console.log("Добро пожаловать в Игры Разума!");
     userName = readlineSync.question("Могу я узнать ваше имя? ");
@@ -47,7 +39,7 @@ var userWelcome = function (gamename) {
             break;
         default:
     }
-    return console.log("\u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u043F\u043E\u043F\u0440\u043E\u0431\u0443\u0435\u043C \u0435\u0449\u0435 \u0440\u0430\u0437, " + userName + "!");
+    return console.log();
 };
 var checkAnswer = function (userAnswer, correctAnswer, correctAnswerCount) {
     if (correctAnswer === userAnswer) {
@@ -58,6 +50,7 @@ var checkAnswer = function (userAnswer, correctAnswer, correctAnswerCount) {
         return true;
     }
     console.log("'" + userAnswer + "' \u043D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u043E\u0442\u0432\u0435\u0442 ;(. \u041F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u043E\u0442\u0432\u0435\u0442 \u0431\u044B\u043B '" + correctAnswer + "'.");
+    console.log("\u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u043F\u043E\u043F\u0440\u043E\u0431\u0443\u0435\u043C \u0435\u0449\u0435 \u0440\u0430\u0437, " + userName + "!");
     return false;
 };
 exports.checkAnswer = checkAnswer;

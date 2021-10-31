@@ -22,3 +22,5 @@ rules:
   no-underscore-dangle: [ 2, { "allow": [ "__filename", "__dirname" ] } ]
   import/no-extraneous-dependencies: ["error", {"devDependencies": true}]
   quotes: [2, "double", { "avoidEscape": true }]
+  no-redeclare: 0
+  no-undef: 0

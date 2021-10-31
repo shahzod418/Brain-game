@@ -4,26 +4,17 @@ import brainCalc from "../games/brain-calc";
 import brainGCD from "../games/brain-gcd";
 import brainProgression from "../games/brain-progression";
 import brainPrime from "../games/brain-prime";
-
-const gameList: string[] = ["even", "calc", "gcd", "progression", "prime"];
-//
-// const gameDescription = {
-//   even: 'Determining an even number',
-//   calc: 'Arithmetic expressions that need to be calculated',
-//   gcd: 'Determining the greatest common divisor',
-//   progression: 'Finding missing numbers in a sequence of numbers',
-//   prime: 'Definition of a prime number',
-// };
+import { gameList } from "./game-list";
 
 let userName = "";
 
 const userWelcome = (gamename: string): void => {
-  if (!gameList.includes(gamename)) {
+  if (!gameList().includes(gamename)) {
     return console.log(
-      "Не выбрана игра из списка.\nВоспользуйтесь опцией --list для просмотра списка игр"
+      "Не выбрана игра из списка.\nВоспользуйтесь командой list для просмотра списка игр"
     );
   }
-  
+
   console.log("Добро пожаловать в Игры Разума!");
 
   userName = readlineSync.question("Могу я узнать ваше имя? ");
@@ -57,7 +48,7 @@ const userWelcome = (gamename: string): void => {
       break;
     default:
   }
-  return console.log(`Давайте попробуем еще раз, ${userName}!`);
+  return console.log();
 };
 
 export const checkAnswer = (
@@ -75,6 +66,7 @@ export const checkAnswer = (
   console.log(
     `'${userAnswer}' неправильный ответ ;(. Правильный ответ был '${correctAnswer}'.`
   );
+  console.log(`Давайте попробуем еще раз, ${userName}!`);
   return false;
 };
 
