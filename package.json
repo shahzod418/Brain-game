@@ -2,7 +2,10 @@
   "name": "project--brain-game-typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/cli.js",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +24,8 @@
     "prettier": "^2.4.1",
     "readline-sync": "^1.4.10",
     "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "commander": "^8.3.0"
   }
 }
