@@ -28,9 +28,7 @@ var gameListWithDescription = function () {
         if (gameDescription[gameName]) {
             return gameName + ": " + gameDescription[gameName];
         }
-        else {
-            return gameName + ": Description comming soon";
-        }
+        return gameName + ": Description comming soon";
     });
 };
 exports["default"] = gameListWithDescription;

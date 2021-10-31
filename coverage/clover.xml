@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1635713503991" clover="3.2.0">
-  <project timestamp="1635713503991" name="All files">
+<coverage generated="1635714399189" clover="3.2.0">
+  <project timestamp="1635714399189" name="All files">
     <metrics statements="266" coveredstatements="147" conditionals="55" coveredconditionals="33" methods="24" coveredmethods="20" elements="345" coveredelements="200" complexity="0" loc="266" ncloc="266" packages="2" files="8" classes="8"/>
     <package name="games">
       <metrics statements="159" coveredstatements="71" conditionals="29" coveredconditionals="15" methods="13" coveredmethods="10"/>
-      <file name="brain-calc.js" path="/Users/shahzod/GitHub/project--brain-game-typescript/games/brain-calc.js">
+      <file name="brain-calc.js" path="/Users/shahzod/GitHub/project--brain-game/games/brain-calc.js">
         <metrics statements="35" coveredstatements="17" conditionals="9" coveredconditionals="3" methods="2" coveredmethods="2"/>
         <line num="1" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="2" count="2" type="stmt"/>
@@ -42,7 +42,7 @@
         <line num="34" count="2" type="stmt"/>
         <line num="35" count="2" type="stmt"/>
       </file>
-      <file name="brain-even.js" path="/Users/shahzod/GitHub/project--brain-game-typescript/games/brain-even.js">
+      <file name="brain-even.js" path="/Users/shahzod/GitHub/project--brain-game/games/brain-even.js">
         <metrics statements="25" coveredstatements="12" conditionals="5" coveredconditionals="3" methods="2" coveredmethods="2"/>
         <line num="1" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="2" count="2" type="stmt"/>
@@ -70,7 +70,7 @@
         <line num="24" count="2" type="stmt"/>
         <line num="25" count="2" type="stmt"/>
       </file>
-      <file name="brain-gcd.js" path="/Users/shahzod/GitHub/project--brain-game-typescript/games/brain-gcd.js">
+      <file name="brain-gcd.js" path="/Users/shahzod/GitHub/project--brain-game/games/brain-gcd.js">
         <metrics statements="31" coveredstatements="14" conditionals="5" coveredconditionals="3" methods="3" coveredmethods="2"/>
         <line num="1" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="2" count="2" type="stmt"/>
@@ -104,7 +104,7 @@
         <line num="30" count="2" type="stmt"/>
         <line num="31" count="2" type="stmt"/>
       </file>
-      <file name="brain-prime.js" path="/Users/shahzod/GitHub/project--brain-game-typescript/games/brain-prime.js">
+      <file name="brain-prime.js" path="/Users/shahzod/GitHub/project--brain-game/games/brain-prime.js">
         <metrics statements="35" coveredstatements="14" conditionals="5" coveredconditionals="3" methods="3" coveredmethods="2"/>
         <line num="1" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="2" count="2" type="stmt"/>
@@ -142,7 +142,7 @@
         <line num="34" count="2" type="stmt"/>
         <line num="35" count="2" type="stmt"/>
       </file>
-      <file name="brain-progression.js" path="/Users/shahzod/GitHub/project--brain-game-typescript/games/brain-progression.js">
+      <file name="brain-progression.js" path="/Users/shahzod/GitHub/project--brain-game/games/brain-progression.js">
         <metrics statements="33" coveredstatements="14" conditionals="5" coveredconditionals="3" methods="3" coveredmethods="2"/>
         <line num="1" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="2" count="2" type="stmt"/>
@@ -181,7 +181,7 @@
     </package>
     <package name="src">
       <metrics statements="107" coveredstatements="76" conditionals="26" coveredconditionals="18" methods="11" coveredmethods="10"/>
-      <file name="cli.js" path="/Users/shahzod/GitHub/project--brain-game-typescript/src/cli.js">
+      <file name="cli.js" path="/Users/shahzod/GitHub/project--brain-game/src/cli.js">
         <metrics statements="57" coveredstatements="34" conditionals="14" coveredconditionals="6" methods="3" coveredmethods="3"/>
         <line num="1" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="2" count="2" type="stmt"/>
@@ -241,7 +241,7 @@
         <line num="56" count="2" type="stmt"/>
         <line num="57" count="2" type="stmt"/>
       </file>
-      <file name="game-list.js" path="/Users/shahzod/GitHub/project--brain-game-typescript/src/game-list.js">
+      <file name="game-list.js" path="/Users/shahzod/GitHub/project--brain-game/src/game-list.js">
         <metrics statements="36" coveredstatements="28" conditionals="8" coveredconditionals="8" methods="5" coveredmethods="4"/>
         <line num="1" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="2" count="2" type="stmt"/>
@@ -280,7 +280,7 @@
         <line num="35" count="2" type="stmt"/>
         <line num="36" count="2" type="stmt"/>
       </file>
-      <file name="random-values.js" path="/Users/shahzod/GitHub/project--brain-game-typescript/src/random-values.js">
+      <file name="random-values.js" path="/Users/shahzod/GitHub/project--brain-game/src/random-values.js">
         <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
         <line num="1" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="2" count="3" type="stmt"/>

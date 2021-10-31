@@ -1,10 +1,6 @@
-install: install-deps
-
-run:
-	node bin/brain-games.js
-
-install-deps:
+install:
 	npm ci
+	npm link
 
 lint:
 	npx eslint **/*.ts
@@ -16,5 +12,8 @@ publish:
 	npm publish --dry-run
 	
 test:
-	npm run test
+	npm test
+	
+test-coverage:
+	npm test -- --coverage --coverageProvider=v8
 	
