@@ -10,22 +10,24 @@ interface gameDescription {
   prime: string;
 }
 
-const gameDescription: gameDescription = {
+const gameDescription = (): gameDescription => ({
   even: "Determining an even number",
   calc: "Arithmetic expressions that need to be calculated",
   gcd: "Determining the greatest common divisor",
   progression: "Finding missing numbers in a sequence of numbers",
   prime: "Definition of a prime number",
-};
+});
 
 const getAbsolutePath = (file: string): string => resolve(cwd(), file);
 
 const getExtension = (file: string): string => extname(file);
 
-export const gameList = (): string[] => {
+export const gameList = (
+  absolutePath: string = getAbsolutePath("./games/")
+): string[] => {
   const gameArray: string[] = [];
 
-  readdirSync(getAbsolutePath("./games/")).forEach((file) => {
+  readdirSync(absolutePath).forEach((file) => {
     gameArray.push(file);
   });
 
@@ -34,10 +36,10 @@ export const gameList = (): string[] => {
     .map((file) => file.split("-").slice(-1).join().split(".")[0]);
 };
 
-const gameListWithDescription = (): string[] => {
+const gameListWithDescription = (description = gameDescription()): string[] => {
   return gameList().map((gameName) => {
-    if (gameDescription[gameName]) {
-      return `${gameName}: ${gameDescription[gameName]}`;
+    if (description[gameName]) {
+      return `${gameName}: ${description[gameName]}`;
     }
     return `${gameName}: Description comming soon`;
   });

@@ -24,3 +24,4 @@ rules:
   quotes: [2, "double", { "avoidEscape": true }]
   no-redeclare: 0
   no-undef: 0
+  no-return-assign: 0

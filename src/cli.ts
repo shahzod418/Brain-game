@@ -47,6 +47,7 @@ const userWelcome = (gamename: string): void => {
       brainPrime();
       break;
     default:
+      break;
   }
   return console.log();
 };

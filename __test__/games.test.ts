@@ -4,7 +4,7 @@ import brainGCD from "../games/brain-gcd";
 import brainProgression from "../games/brain-progression";
 import brainPrime from "../games/brain-prime";
 
-test("Games Return Undefined", () => {
+test("Games return undefined", () => {
   expect(brainEven(4)).toBeUndefined();
   expect(brainCalc(4)).toBeUndefined();
   expect(brainGCD(4)).toBeUndefined();
