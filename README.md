@@ -1,6 +1,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/fa7a1dae33a9bcd31089/maintainability)](https://codeclimate.com/github/shahzod418/project--brain-game/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/fa7a1dae33a9bcd31089/test_coverage)](https://codeclimate.com/github/shahzod418/project--brain-game/test_coverage) [![Actions Status](https://github.com/shahzod418/project--brain-game-typescript/workflows/eslint-test/badge.svg)](https://github.com/shahzod418/project--brain-game-typescript/actions)
 
-# О Проекте
+# О проекте
 
 СLI приложение, написанное на TypeScript с применением Node.JS модуля Commander.JS и консольной библиотеки readline-sync.
 
